@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class ="bg-[#43C6F1] ">
+       <section class="main ">
+        <div class="weather-container flex flex-col justify-center">
+            <!-- today weather information -->
+            <div class="today-info-box flex flex-row justify-evenly  pt-6 text-white text-xl">
+                 <div class="search-temp-box flex flex-col justify-items-center gap-10 mt-8 ">
+                      <div class="search-location-box flex flex-col gap-4 ">
+                           <input type="text" placeholder="Enter your city name" class=" border-2 border-gray-700  border-solid rounded-xl p-3">
+                           <button class="px-4 py-2 bg-sky-700 rounded-xl hover:bg-sky-900 cursor-pointer">Search</button>
+                           <p>--------------or--------------</p>
+                           <button class="px-4 py-2 bg-gray-700 rounded-xl hover:bg-gray-900 cursor-pointer">Use current location</button>
+                        </div>
+                        <div class="temperture-box flex flex-col justify-center mt-4 mx-15 gap-2">
+                         <div class="flex flex-row gap-4"> <img src="icons/tem-icon-removebg-preview.png" alt="temperture icon " class="w-12 h-12"><h1 class="text-5xl font-600">25<sup>o</sup></h1></div>
+                            <p>Feels like 23<sup>o</sup></p>
+                        </div>
+                    </div>
+                <div class="icon-box flex flex-col gap-3 text-center">
+                    <img src="icons/sun-icon-removebg-preview.png" alt="sun icons" class="day-icons w-70 h-70">
+                    <p class="day-info">cloudy</p>
+                </div>
+                <div class="today-all-info-box flex flex-col  gap-5 my-25">
+                      <div class="flex flex-row  gap-4"><i class="fa-regular fa-sun mt-2"></i><p>sunrise</p></div>
+                      <div class="flex flex-row gap-4"><i class="fa-solid fa-sun mt-2"></i><p>sunset</p></div>
+                      <div class="flex flex-row gap-4"><i class="fa-solid fa-droplet mt-2"></i><p>60%</p></div>
+                      <div class="flex flex-row gap-4"><i class="fa-solid fa-wind mt-2"></i><p>10km/s</p></div>
+                      <div class="flex flex-row gap-4"><i class="fa-solid fa-arrow-up mt-2"></i><p>1023.0 mb</p></div>
+                </div>
+            </div>
+            <!-- next days weatther information -->
+            <div class="next-info-box flex flex-row justify-center  mt-25 text-white bg-[#1DA1F2] p-4">
+                <div class="next-day  flex-col justify-center justify-items-center text-center shadow-xl py-4 ">
+                    <img src="icons/sun-icon-removebg-preview.png" alt="weather icon" class="w-1/4 h-1/4">
+                    <div class="next-day-info flex flex-col gap-3 p-2">
+                        <h1 class="tem-info text-xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25<sup>o</sup></h1>
+                        <p class="text-xl"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                        <p class="text-xl"><span><i class="fa-solid fa-wind"></i></h1></span>  1023.0 mb</p>
+                    </div>
+                </div>
+                <div class="next-day flex-col justify-center justify-items-center shadow-xl py-4 text-center">
+                    <img src="icons/sun-icon-cloud.png" alt="weather icon" class="w-1/4 h-1/4">
+                    <div class="next-day-info flex flex-col gap-3 p-2">
+                        <h1 class="tem-info text-xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25<sup>o</sup></h1>
+                        <p class="text-xl"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                        <p class="text-xl"><span><i class="fa-solid fa-wind"></i></h1></span>  1023.0 mb</p>
+                    </div>
+                </div>
+                <div class="next-day flex-col justify-center justify-items-center shadow-xl py-4 text-center">
+                    <img src="icons/sun-icon-removebg-preview.png" alt="weather icon" class="w-1/4 h-1/4">
+                    <div class="next-day-info flex flex-col gap-3 p-2">
+                        <h1 class="tem-info text-xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25<sup>o</sup></h1>
+                        <p class="text-xl"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                        <p class="text-xl"><span><i class="fa-solid fa-wind"></i></h1></span>  1023.0 mb</p>
+                    </div>
+                </div>
+                <div class="next-day flex-col justify-center justify-items-center shadow-xl py-4 text-center">
+                    <img src="icons/sun-icon-removebg-preview.png" alt="weather icon" class="w-1/4 h-1/4">
+                    <div class="next-day-info flex flex-col gap-3 p-2">
+                        <h1 class="tem-info text-xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25<sup>o</sup></h1>
+                        <p class="text-xl"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                        <p class="text-xl"><span><i class="fa-solid fa-wind"></i></h1></span>  1023.0 mb</p>
+                    </div>
+                </div>
+                <div class="next-day flex-col justify-center justify-items-center shadow-xl py-4 text-center">
+                    <img src="icons/sun-icon-removebg-preview.png" alt="weather icon" class="w-1/4 h-1/4">
+                    <div class="next-day-info flex flex-col gap-3 p-2">
+                        <h1 class="tem-info text-xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25<sup>o</sup></h1>
+                        <p class="text-xl"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                        <p class="text-xl"><span><i class="fa-solid fa-wind"></i></h1></span>  1023.0 mb</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <script src="https://kit.fontawesome.com/c4c6269f26.js" crossorigin="anonymous"></script>
+       <script src="index.js"></script>
+</body>
+</html>
