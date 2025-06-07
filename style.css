@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+     font-size: 62.5%
+}
+.main-heading{
+     padding:1.4rem;
+}
+.main-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.current-day-weather{
+     padding-top: 3rem;
+}
+@media(max-width:500px){
+  .current-day-weather{
+     padding-top: 3rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+}
+.five-day-weather{
+     padding:2rem ;
+     display: flex;
+     flex-direction: column;
+}
+}
+@media(max-width:375px){
+     .current-day-weather{
+     padding-top: 3rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+}
+.five-day-weather{
+     padding:2rem ;
+     display: flex;
+     flex-direction: column;
+}
+}
+button{
+    padding: 1.6rem 3.2rem;
+    font-size: 2rem;
+    border-radius: 11px;
+     }
+input{
+     padding: 11px;
+     border-radius: 11px;
+     }
+select{
+     padding: 1.2rem;
+}
+.five-day-weather{
+     padding:2rem ;
+}
+.five-din{
+     padding: 4rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 6px;
+}
+@media(max-width:768px){
+     .five-din{
+     padding: 2rem;
+     gap: 6px;
+}
+}
+.rigth-if{
+     padding: 1.6rem;
+     border-radius: 11px;
+}

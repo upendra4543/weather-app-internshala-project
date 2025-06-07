@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body class ="bg-[#43C6F1] ">
+          <h1 class=" main-heading text-4xl text-white">Real-Time Weather Forecast</h1>
+        <div class="main-container text-white text-xl ">
+          <!-- today-forcost section -->
+                <div class="current-day-weather flex flex-row justify-evenly">
+                          <div class="left-informtion flex flex-col justify-evenly gap-20 text-center relative">
+                                <div ><input id="input-field" type="text" placeholder="Enter your city name" required class=" text-2xl border-2 border-gray-700  border-solid ">
+                                     <select name="city" id="drop-opt" class="bg-[#1DA1F2] p-2 text-center text-3xl  rounded-xl cursor-pointer ">
+                                            
+                                      </select>
+                                </div>
+                                  <button id="search_btn" class = "bg-sky-700 rounded-xl hover:bg-sky-900 cursor-pointer   py-3 ">Search</button>
+                                  <button id="current-location" class= "bg-gray-700 rounded-xl hover:bg-gray-900 cursor-pointer py-3"> <i class="fa-solid fa-location-dot"></i>  Use current location</button>
+                                  <div class="flex flex-row gap-3"> <img id="weather-icon" src="tem-icon-removebg-preview.png" alt="temperture icon " class="w-16 h-16"><h1 id="main-temp" class="text-6xl font-600">25&#176</h1></div>
+                                  <p id="feels" class="text-4xl absolute left-60 top-133">Feels like 23&#176</p>
+                        
+                          </div>
+                          <div class="mid-informtion flex flex-col justify-items-center text-center text-4xl gap-8 ">
+                                         <img src=" https://openweathermap.org/img/wn/01d@2x.png" alt="sun icons" class="day-icons w-50 h-50 ">
+                                          <p id="cloud-condition" class="day-info">cloudy</p>
+                                          <h1 id="country" class="text-4xl text-center text-white font-semibold">Country</h1>
+                                          <p id="date-time"></p>
+                                          <p id="min">min</p>
+                                          <p id="max">max</p>
+                          </div>
+                          <div class="right-informtion flex flex-col justify-center gap-8 text-4xl">
+                                  <div class=" rigth-if flex flex-row  gap-4 shadow-xl "><i class="fa-regular fa-sun mt-2"></i><p id="sunrise">sunrise</p></div>
+                                  <div class=" rigth-if flex flex-row gap-4 shadow-xl"><i class="fa-solid fa-sun mt-2"></i><p id="sunset">sunset</p></div>
+                                  <div class=" rigth-if flex flex-row gap-4 shadow-xl "><i class="fa-solid fa-droplet mt-2"></i><p id="humidity">60%</p></div>
+                                  <div class=" rigth-if flex flex-row gap-4 shadow-xl"><i class="fa-solid fa-wind mt-2"></i><p id="wind-speed">10km/s</p></div>
+                                  <div class=" rigth-if flex flex-row gap-4 shadow-xl"><i class="fa-solid fa-arrow-up mt-2"></i><p id="pressure">1023.0 mb</p></div>
+                          </div>
+                </div>
+                <!-- next five day forcost default -->
+                <div id="next-five-day" class="five-day-weather flex flex-row justify-center bg-[#1DA1F2] text-4xl ">
+                        <div class=" five-din flex-col justify-center justify-items-center text-center shadow-xl ">
+                            <img id="nex-day-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-1/4 h-1/4">
+                            <h1 id="nex-day-temp" class="tem-info "><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25&#176</h1>
+                            <p id="next-day-humidity"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                            <p id="next-day"> days</p>
+                            <p id="next-day"> days</p>
+                
+                       </div>
+                       <div class=" five-din flex-col justify-center justify-items-center  text-center shadow-xl p-4 ">
+                            <img id="nex-day-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-1/4 h-1/4">
+                            <h1 id="nex-day-temp" class="tem-info text-4xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25&#176</h1>
+                            <p id="next-day-humidity"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                            <p id="next-day"> days</p>
+                            <p id="next-day"> days</p>
+                
+                       </div>
+                       <div class=" five-din flex-col justify-center justify-items-center  text-center shadow-xl p-4 ">
+                            <img id="nex-day-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-1/4 h-1/4">
+                            <h1 id="nex-day-temp" class="tem-info text-4xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25&#176</h1>
+                            <p id="next-day-humidity"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                            <p id="next-day"> days</p>
+                            <p id="next-day"> days</p>
+                
+                       </div>
+                       <div class=" five-din flex-col justify-center justify-items-center  text-center shadow-xl p-4 ">
+                            <img id="nex-day-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-1/4 h-1/4">
+                            <h1 id="nex-day-temp" class="tem-info text-4xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25&#176</h1>
+                            <p id="next-day-humidity"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                            <p id="next-day"> days</p>
+                            <p id="next-day"> days</p>
+                
+                       </div>
+                       <div class=" five-din flex-col justify-center justify-items-center  text-center shadow-xl p-4 ">
+                            <img id="nex-day-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-1/4 h-1/4">
+                            <h1 id="nex-day-temp" class="tem-info text-4xl"><span><i class="fa-solid fa-temperature-three-quarters"></i></span> 25&#176</h1>
+                            <p id="next-day-humidity"><span><i class="fa-solid fa-droplet"></i>  60%</p>
+                            <p id="next-day"> days</p>
+                            <p id="next-day"> days</p>
+                
+                       </div>
+                </div>
+        </div>
+         <script src="https://kit.fontawesome.com/c4c6269f26.js" crossorigin="anonymous"></script>
+         <script src="index.js"></script>
+</body>
+        
